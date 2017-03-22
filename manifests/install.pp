@@ -8,4 +8,11 @@ class profile_lamp::install {
     fail("Use of private class ${name} by ${caller_module_name}")
   }
 
+  class {'::apache':
+    mpm_module => 'prefork',
+  }
+  include ::apache::mod::php
+
+  class {'::mysql::server':
+  }
 }

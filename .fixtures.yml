@@ -8,5 +8,10 @@ fixtures:
     ntp:
       repo: "https://github.com/puppetlabs/puppetlabs-ntp.git"
       ref: "4.2.0"
+    concat:
+      repo: "https://github.com/puppetlabs/puppetlabs-concat.git"
+      branch: "1.2.x"
+    apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
+    mysql: "https://github.com/puppetlabs/puppetlabs-mysql.git"
   symlinks:
-    profile_base: "#{source_dir}"
+    profile_lamp: "#{source_dir}"
