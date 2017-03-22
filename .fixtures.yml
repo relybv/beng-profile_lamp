@@ -13,5 +13,6 @@ fixtures:
       branch: "1.2.x"
     apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
     mysql: "https://github.com/puppetlabs/puppetlabs-mysql.git"
+    puppet-staging: "https://github.com/voxpupuli/puppet-staging.git"
   symlinks:
     profile_lamp: "#{source_dir}"
