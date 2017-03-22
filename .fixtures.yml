@@ -1,0 +1,23 @@
+fixtures:
+  repositories:
+    stdlib:
+      repo: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+      ref: "4.12.0"
+
+# profile module layout, default include ntp module
+    ntp:
+      repo: "https://github.com/puppetlabs/puppetlabs-ntp.git"
+      ref: "4.2.0"
+    puppet: "https://github.com/abstractitptyltd/abstractit-puppet.git"
+    inifile: "https://github.com/puppetlabs/puppetlabs-inifile.git"
+    apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
+    firewall: "https://github.com/puppetlabs/puppetlabs-firewall.git"
+    snmp: "https://github.com/razorsedge/puppet-snmp.git"
+    vmwaretools: "https://github.com/craigwatson/puppet-vmwaretools.git"
+    openvmtools: "https://github.com/razorsedge/puppet-openvmtools.git"
+    vsftpd: "https://github.com/thias/puppet-vsftpd.git"
+    beng_nrpe: "https://github.com/relybv/beng-beng_nrpe.git"
+    beng_fw: "https://github.com/relybv/beng-beng_fw.git"
+    beng_vmware: "https://github.com/relybv/beng-beng_vmware.git"
+  symlinks:
+    profile_base: "#{source_dir}"

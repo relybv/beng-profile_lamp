@@ -1,0 +1,29 @@
+{
+  "name": "beng-profile_lamp",
+  "version": "0.1.0",
+  "author": "Paul Gomersbach",
+  "summary": "Base profile",
+  "license": "Apache-2.0",
+  "source": "https://github.com/relybv/beng-profile_lamp.git",
+  "project_page": "https://github.com/relybv/beng-profile_lamp",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+  {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ]
+}
