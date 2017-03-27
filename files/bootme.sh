@@ -52,7 +52,7 @@ if [ -d /root/profile_lamp ]; then
   git pull
 else
   echo "Cloning repo"
-  git clone https://github.com/marcosjerps/beng-profile_lamp.git /root/profile_lamp
+  git clone https://github.com/relybv/beng-profile_lamp.git /root/profile_lamp
   cd /root/profile_lamp
 fi
 
