@@ -12,7 +12,7 @@ class profile_lamp::install {
     mpm_module => 'prefork',
   }
   include ::apache::mod::php
-  package { 'php-mssql.x86_64':
+  package { 'php-mssql':
     ensure => installed,
   }
   class {'::mysql::server':
