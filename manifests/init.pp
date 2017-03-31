@@ -10,8 +10,8 @@
 class profile_lamp
 (
 ) inherits ::profile_lamp::params {
-  class { '::profile_lamp::install': } ->
-  class { '::profile_lamp::config': } ~>
-  class { '::profile_lamp::service': } ->
-  Class['::profile_lamp']
+  class { '::profile_lamp::install': }
+  -> class { '::profile_lamp::config': }
+  ~> class { '::profile_lamp::service': }
+  -> Class['::profile_lamp']
 }
