@@ -11,11 +11,16 @@ class profile_lamp::install {
   class {'::apache':
     mpm_module => 'prefork',
   }
+
   include ::apache::mod::php
+
+  class {'::epel': }
+
   package { 'php-mssql':
-    ensure => installed,
-    notify => Service['httpd'],
+    ensure  => installed,
+    notify  => Service['httpd'],
+    require => Class['epel'],
   }
-  class {'::mysql::server':
-  }
+
+  class {'::mysql::server': }
 }
