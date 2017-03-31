@@ -23,6 +23,7 @@ describe 'profile_lamp' do
 
           it { is_expected.to contain_class('apache') }
           it { is_expected.to contain_class('mysql::server') }
+          it { is_expected.to contain_package('php-mssql') }
 
         end
       end

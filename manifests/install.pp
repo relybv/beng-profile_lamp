@@ -14,7 +14,7 @@ class profile_lamp::install {
   include ::apache::mod::php
   package { 'php-mssql':
     ensure => installed,
-     notify  => Service['httpd'],
+    notify => Service['httpd'],
   }
   class {'::mysql::server':
   }
