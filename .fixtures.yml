@@ -13,6 +13,7 @@ fixtures:
       branch: "1.2.x"
     apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
     mysql: "https://github.com/puppetlabs/puppetlabs-mysql.git"
+    firewall: "https://github.com/puppetlabs/puppetlabs-firewall.git"
     puppet-staging: "https://github.com/voxpupuli/puppet-staging.git"
     epel: "https://github.com/stahnma/puppet-module-epel.git"
 
